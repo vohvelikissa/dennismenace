@@ -2,12 +2,11 @@
 #include<string.h>
 
 int main() {
-	int vitunpituus = strlen("vittu");
-	char vittu[vitunpituus];
-	char *vp = malloc(strlen(vittu));
-	for (int i = 0; i < vitunpituus; i++) {
-		vittu[i] = 'a';
+	char *vp = malloc(strlen("vittu"));
+	for (int i = 0; i < strlen(vp); i++) {
+		vp[i] = 'a';
 	}
+	printf("%s",vp);
 	free(vp);
-	printf("%s",vittu);
+	printf("%s",vp);
 }
